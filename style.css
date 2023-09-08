@@ -15,7 +15,7 @@ html, body {
 #logo {
     color: white;
     font-size: 28px;
-
+    animation: leftAnim 2s ease 0s 1 normal forwards;
 }
 
 .header {
@@ -38,12 +38,13 @@ html, body {
 .left {
     flex: 60%;
     /* background-color: aquamarine; */
-
+    /* background-color: rgb(1,1,1,0.25); */
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .right {
@@ -63,6 +64,8 @@ html, body {
     color: white;
     font-size: 18px;
     font-weight: 100;
+
+    animation: rightAnimBox 1.5s ease 0s 1 normal forwards;
 }
 
 .signform p {
@@ -100,6 +103,7 @@ html, body {
     padding: 60px;
     border: 2px solid white;
     border-radius: 8px;
+    animation: leftAnimBox 2s ease 0s 1 normal forwards;
 }
 
 .infoform p {
@@ -123,3 +127,45 @@ html, body {
     font-size: 14px;
 }
 
+#disclaimer {
+    margin-top: 4rem;
+    font-size: 10px;
+}
+
+#disclaimer a {
+    color: white;
+}
+
+@keyframes leftAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes leftAnimBox {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes rightAnimBox {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
