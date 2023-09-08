@@ -97,6 +97,16 @@ html, body {
     border-bottom: 1px solid white;
 }
 
+.signform-content button {
+    border: 4px solid white;
+    background-color: transparent;
+    outline: 0;
+    font-family: "Roboto";
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
 
 
 .infoform {
@@ -165,6 +175,7 @@ html, body {
 	}
 
 	100% {
+
 		opacity: 1;
 		transform: translateX(0);
 	}
