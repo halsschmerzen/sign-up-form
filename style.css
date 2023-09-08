@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-image: url("/img/delivery.jpg");
+    background-size: cover;
+
+    font-family: "Roboto", serif;
+}
+
+#logo {
+    color: white;
+    font-size: 28px;
+
+}
+
+.header {
+    align-items: center;
+    margin-bottom: 12rem;
+}
+
+.header #logo {
+    font-size: 52px;
+    color: orange;
+    font-weight: bold;
+    
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    flex: 60%;
+    /* background-color: aquamarine; */
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    flex: 40%;
+    background-color: rgba(37, 22, 22, 0.842);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signform {
+    padding: 40px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 10px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.signform p {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.signform-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    
+}
+
+.signform-content div {
+    margin-bottom: 10px;
+}
+
+.signform-content input {
+    color: white;
+
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+}
+
+
+
+.infoform {
+    padding: 60px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.infoform p {
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sign-info {
+    padding: 4px;
+    /* border: 2px solid white; */
+    border-radius: 8px;
+
+    font-size: 12px;
+}
+
+.sign-info p{
+    width: 20vw;
+    overflow-wrap: break-word;
+    font-size: 14px;
+}
+
